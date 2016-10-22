@@ -9,3 +9,8 @@ Things you'll learn one step at a time:
 * Webpack Essentials
 * React
 * Redux
+
+## To use this book
+* Keep in mind that each Section Heading (like "Basics", Tools", etc) are all links to articles too.
+* You can use keyboard Arrow Keys, or the arrows on the sides of the page, to move between pages.
+* It's mobile-friendly, so you can read on the go :)

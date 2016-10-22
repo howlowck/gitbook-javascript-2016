@@ -50,9 +50,15 @@ Despite those shortcomings, much of the JS community applauded the fact that Com
 ![cheer](../assets/cheer.gif)
 
 ### ES6 and the import/export syntax
-In 2014, ES5 (was still called ES5, not ES2015) finalized its module loading syntax.  The goal of the import/export syntax was to again unify the Javascript community with one syntax that would rule them all, but this time to pick the best of both worlds.
+In 2014, ES5 (was still called ES5, not ES2015) finalized its module loading syntax.  The goal of the import/export syntax was to again unify the Javascript community with one syntax that would rule them all.
 
-The import/export syntax would both be as concise and readable as CommonJS, and allows asynchronous module loading that's more suited for the browser.
+The goal of import/export functionality is to be as concise and readable as CommonJS, and allow asynchronous module loading that's more suited for the browser.
+
+It's the best of both worlds!
+
+![ever after](../assets/everafter.gif)
+
+## `export` and `import` syntax
 
 This is what the **`export`** syntax looks like:  
 
@@ -67,10 +73,10 @@ function getRandomInt(min, max) {
 class Coder {
   constructor(name) {
     this.name = name
-    this.energy = getRandomInt(2, 5)
+    this.energy = getRandomInt(3, 7)
   }
   drinkCoffee() {
-    this.energy += getRandomInt(1,3)
+    this.energy += getRandomInt(2,5)
   }
   doWork() {
     this.energy -= 1
@@ -101,8 +107,6 @@ vince.reportStatus() // returns 'Vince is coding'
 vince.reportStatus() // returns 'Vince is coding'
 vince.reportStatus() // returns 'Vince is drinking coffee'
 ```
-
-
 
 ## Resource
 * [Overview of the topic](http://www.2ality.com/2014/09/es6-modules-final.html)
