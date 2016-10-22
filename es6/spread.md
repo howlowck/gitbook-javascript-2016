@@ -9,14 +9,15 @@ var techTeam = ['Dennis', 'Vince', 'Ross', 'Chris', 'Hao']
 var cloneTechTeam = [...techTeam]
 
 // cloneTeachTeam now has ['Dennis', 'Vince', 'Ross', 'Chris', 'Hao'], same values as techTeam
+// however techTeam !== cloneTechTeam , simply a clone.
 
 ```
 
 ## Uses for the Spread Operator
 
-I briefly mentioned that mutating objects leads to side-effects and bugs.  As we get more into Redux, it will reenforce that concept even more.  
+I briefly mentioned that mutating objects leads to side-effects and bugs.  As we get more into Redux, we will reenforce that concept even more.  
 
-Instead of mutating arrays, we can use the spread operator (and array functions) to create a new array which leaves the original array alone.
+Instead of mutating arrays, we can use the spread operator (and some array functions) to create a new array which leaves the original array alone.
 
 ### Concatenate/Append to an array
 Instead of `array.push()` which mutates the array, we can use the spread operator like so:

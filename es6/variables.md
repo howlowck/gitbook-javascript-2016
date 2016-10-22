@@ -21,7 +21,7 @@ hao = 'Vince' // will throw an Error
 Also, you cannot "redefined" a variable as a const.  For example:
 ```js
 var hao = 'Hao'; //a regular variable
-const hao = 'Real Hao'; // will throw an Error
+const hao = 'Fake Hao'; // will throw an Error
 ```
 
 `const` is recommended because it will insure you stay true to the original intent of the variable, and can help eliminate function side-effects (a common cause for bugs).
