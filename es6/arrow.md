@@ -26,7 +26,7 @@ While it looks like that arrow functions are just syntactic sugar to anonymous f
 
 > _**Note:**_ Not only does the arrow function not have `this`, it also doesn't have its own `arguments` and `super`.  All are getting from its outer scope.
 
-This might seem like a unnecessary technical detail, it might [lead to confusion](https://twitter.com/jeffrey_way/status/717003578842415105).
+This might seem like a unnecessary technical detail, but it might [lead to confusions](https://twitter.com/jeffrey_way/status/717003578842415105).
 
 ## Resources
 * [es6-features](http://es6-features.org/#ExpressionBodies)
