@@ -15,21 +15,15 @@ For example:
 ```js
 
 var hao = {
-
    firstName: 'Hao',
-
    age: 28
-
 };
 
 function greet() {
-
    console.log('Hi ' + this.firstName + '!');
-
 } 
 
 //creates the function with the explicit binding
-
 var greetsHao = greet.bind(hao);  
 
 greetsHao(); //logs "Hi Hao!"

@@ -1,7 +1,14 @@
 # Summary
 
 * [Basics](basics/README.md)
+  * [Governing Bodies](basics/governing-bodies.md)
+  * [ES5](basics/es5.md)
 * [ES6](es6/README.md)
+  * [Variables](es6/variables.md)
+  * [The `class` Keyword](es6/class.md)
+  * [De-structuring](es6/destructuring.md)
+  * [Object Shorthand](es6/object.md)
+  * [Arrow Functions](es6/arrow.md)
 * [Webpack](webpack/README.md)
 * [React](react/README.md)
 * [Redux](redux/README.md)
