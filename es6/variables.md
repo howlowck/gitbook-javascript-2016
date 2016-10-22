@@ -1,7 +1,7 @@
 # Defining Variables or Constants
 
 ## `let`
-Before ES6, the only way to define a variable is using the `var` function.  `var` is fine, but it can be very confusing.
+Before ES6, the only way to define a variable is using the `var` keyword.  `var` is fine, but it can be very confusing.
 
 That's why quizzes like these exist:
 1. [Quiz about var scopes](http://madebyknight.com/javascript-scope/)
