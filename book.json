@@ -1,6 +1,12 @@
 {
-    "gitbook": ">1.x.x",
-    "plugins": [
-      "youtube"
-    ]
+  "gitbook": "2.x.x",
+  "plugins": [
+    "youtube",
+    "mermaid-compat"
+  ],
+  "pluginsConfig": {
+      "mermaid-compat": {
+         "theme": "forest"
+      }
+    }
 }

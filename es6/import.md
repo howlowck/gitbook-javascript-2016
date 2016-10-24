@@ -56,8 +56,6 @@ The goal of import/export functionality is to be as concise and readable as Comm
 
 It's the best of both worlds!
 
-![ever after](../assets/everafter.gif)
-
 ## `export` and `import` syntax
 
 This is what the **`export`** syntax looks like:  
