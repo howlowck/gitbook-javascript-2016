@@ -1,5 +1,7 @@
-Modern Javascript 2016
+Modern Javascript 2016 
 ======
+
+[Formatted Gitbook](https://howlowck1.gitbooks.io/get-caught-up-with-javascript/content/)
 
 This book will get you caught up on using React and Redux and refers you to a bunch of resources.
 
