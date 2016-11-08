@@ -1,31 +1,14 @@
 # History of React and Redux
 ## Traditional Web Apps (with some AJAX)
 
-This is what a traditional web app with AJAX looks like:
+Web applications at the turn of the millennium were pretty straight forward.  The browser submits a request to the server, and the server processes the request, and return back HTML/CSS and Javascript.  Every request returns back a complete set of HTML/CSS and Javascript.  And state is kept completely on the server.
 
-```mermaid
-sequenceDiagram
-  User-->>Browser: Inputs the URL and hits Enter
-  Note over Browser,Server: Initial Page Load
-  Browser->>Server: Requests HTML/CSS/JS
-  Server->>Browser: Responds with the request assets
-  Browser->>User: Renders the requested Page
-  User-->>Browser: Clicks a link or submits a form
-  Note over Browser,Server: With Traditional HTTP
-  Browser->>Server: Requests new HTML/CSS/JS
-  Server->>Browser: Responds with new assets
-  Browser->>User: Does Full Page Reload
-  User-->>Browser: Inputs email in text input
-  Note over Browser,Server: With Some AJAX
-  Browser-->>Server: Send a small AJAX request
-  Server-->>Browser: Responds whether email input is valid
-  Browser-->>User: shows validation result
-```
+On December 2014, Google introduced Google Suggest which shows search query suggestions as users are typing.  While it seems like magic to many, it was using a new technology back then called AJAX or Asynchronous Javascript and XML.  Soon after, blog posts like [this one](http://adaptivepath.org/ideas/ajax-new-approach-web-applications/) got people start thinking seriously about AJAX.  
 
-AJAX provided a seamless user experience and a seeming performance boost to traditional web apps.
+Since AJAX returns back pure data without a full page reload, it provided a seamless user experience and a seeming performance boost to traditional web apps.
 
 ## Single Page Applications (SPA) and Rise of MV* Javascript Frameworks (2011)
-People soon realized that AJAX be used for more than just simple validation requests.  If all the interactions and form submissions are done on the frontend, there will be no perceived load time after the initial page load, and users will have even more of a seamless experience.
+People then realized that AJAX be used for more than just simple validation requests or quick data requests.  If all the interactions and form submissions are done on the frontend, there will be no perceived load time after the initial page load, and users will have even more of a seamless experience.
 
 As more and more companies (and developers) desired the responsiveness and performance of Single Page Apps, there was a rising need for a better way to manage views and models on the front-end, much like on the backend.
 
