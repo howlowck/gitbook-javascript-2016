@@ -23,7 +23,14 @@ De-structuring assignment is used extensively in React, where we can set variabl
 class Task extends Component {
   render() {
     let {name, completed} = this.props // name and completed are properties on this.props
-    return <Task taskName={name} isCompleted={completed} />
+    return (
+      <div>
+        <p> {name} </p>
+        <p>
+        {completed ? 'You are done! Good job!' : 'You can do it now!'}
+        </p>
+      </div>
+    )
   }
 }
 ```
