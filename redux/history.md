@@ -3,7 +3,7 @@
 
 Web applications at the turn of the millennium were pretty straight forward.  The browser submits a request to the server, and the server processes the request, and return back HTML/CSS and Javascript.  Every request returns back a complete set of HTML/CSS and Javascript.  And state is kept completely on the server.
 
-On December 2014, Google introduced Google Suggest which shows search query suggestions as users are typing.  While it seems like magic to many, it was using a new technology back then called AJAX or Asynchronous Javascript and XML.  Soon after, blog posts like [this one](http://adaptivepath.org/ideas/ajax-new-approach-web-applications/) got people start thinking seriously about AJAX.  
+On December 2004, Google introduced Google Suggest which shows search query suggestions as users are typing.  While it seems like magic to many, it was using a new technology back then called AJAX or Asynchronous Javascript and XML.  Soon after, blog posts like [this one](http://adaptivepath.org/ideas/ajax-new-approach-web-applications/) got people start thinking seriously about AJAX.  
 
 Since AJAX returns back pure data without a full page reload, it provided a seamless user experience and a seeming performance boost to traditional web apps.
 
