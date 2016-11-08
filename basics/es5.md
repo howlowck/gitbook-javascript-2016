@@ -60,6 +60,6 @@ I tend to use `reduce` when I want to condense the array into one value.  One ex
 
 ### `every`, `some`
 
-`every` and `some` returns true or false if the array satifies with the condition returned by the callback.
+`every` and `some` returns true or false if the array satisfies with the condition returned by the callback.
 
 [every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every) and [some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some) on MDN

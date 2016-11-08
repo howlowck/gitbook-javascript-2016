@@ -16,5 +16,6 @@
   * [Webpack](tools/webpack.md)
 * [React](react/README.md)
 * [Redux](redux/README.md)
+  * [History](redux/history.md)
 * [Styles](styles/README.md)
 * [More Resources](resources/README.md)

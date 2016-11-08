@@ -9,6 +9,20 @@ That's why quizzes like these exist:
 
 In the article, [Why you shouldn't use var anymore](https://hackernoon.com/why-you-shouldnt-use-var-anymore-f109a58b9b70#.p35hexjfk), it features the classic for-loop gotcha with `var`
 
+A simple example:
+```js
+{
+  var vince = 'Vince'
+}
+console.log(vince) // Logs "Vince"
+
+{
+  let hao = 'Hao'
+}
+console.log(hao) // Uncaught ReferenceError, hao is not defined
+
+```
+
 ## `const`
 `const` defined a constant variable (oxymoron!).  Once a const is assigned, it cannot be changed.  You have to declare **and** initialize a const variable.
 
