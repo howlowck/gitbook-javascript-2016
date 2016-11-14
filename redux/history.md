@@ -30,7 +30,7 @@ Despite the explosion of frameworks, almost all of them shared these features:
 
 When React was announce, large part of the JS community was feeling the **[JS framework fatigue](http://www.allenpike.com/2015/javascript-framework-fatigue/)**.  The common response was "Yet Another Framework?!", not only that, React was advocating a whole new syntax, JSX or Javascript as XML.  
 
-If you watched the video on the [React Section](../react/README.md), you'll notice that, unlike React, Facebook didn't really release any software for Flux.  The speaker only talked about the idea of Flux and how it would untangle the mess of a two-way binding system in a large application.  I think they want to emphasize the beauty of Reach which is that it is so unconcerned with *how* the data gets into react, making it flexible enough to work with virtually any JS framework's view layer. 
+If you watched the video on the [React Section](../react/README.md), you'll notice that, unlike React, Facebook didn't really release any software for Flux.  The speaker only talked about the idea of Flux and how it would untangle the mess of a two-way binding system in a large application.  I think they want to emphasize the beauty of React which is that it is so unconcerned with *how* the data gets into react, making it flexible enough to work with virtually any JS framework's view layer. 
 
 Never the less, the questions posed by the audience at the end of that video, many of which were on the implementation of Flux, were indicative of how the community will step up in the months to come. 
 
