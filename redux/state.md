@@ -28,3 +28,5 @@ We cannot easily do that if the state looks like this:
   }
 }
 ```
+
+TODO: another Resource: [Visual Guide to React State](https://daveceddia.com/visual-guide-to-state-in-react/)
