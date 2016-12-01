@@ -1,0 +1,712 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Promise | Modern Javascript 2016 </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../es6/generator.html" />
+    
+    
+    <link rel="prev" href="../es6/class.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.7"
+        data-chapter-title="Promise"
+        data-filepath="es6/promise.md"
+        data-basepath=".."
+        data-revision="Thu Dec 01 2016 13:03:31 GMT-0600 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="basics/index.html">
+            
+                
+                    <a href="../basics/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Basics
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="basics/governing-bodies.html">
+            
+                
+                    <a href="../basics/governing-bodies.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Governing Bodies
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="basics/es5.html">
+            
+                
+                    <a href="../basics/es5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        ES5
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="es6/index.html">
+            
+                
+                    <a href="../es6/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        ES6
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="es6/variables.html">
+            
+                
+                    <a href="../es6/variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Variables
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="es6/destructuring.html">
+            
+                
+                    <a href="../es6/destructuring.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        De-structuring
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="es6/object.html">
+            
+                
+                    <a href="../es6/object.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Object Shorthand
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="es6/spread.html">
+            
+                
+                    <a href="../es6/spread.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Spread Operator
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="es6/arrow.html">
+            
+                
+                    <a href="../es6/arrow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Arrow Functions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="es6/class.html">
+            
+                
+                    <a href="../es6/class.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        The `class` Keyword
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.7" data-path="es6/promise.html">
+            
+                
+                    <a href="../es6/promise.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Promise
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="es6/generator.html">
+            
+                
+                    <a href="../es6/generator.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Generator
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="es6/import.html">
+            
+                
+                    <a href="../es6/import.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        import/export
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="tools/index.html">
+            
+            <span><b>3.</b> Tools</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="tools/babel.html">
+            
+                
+                    <a href="../tools/babel.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Babel
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="tools/webpack.html">
+            
+                
+                    <a href="../tools/webpack.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Webpack
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="react/index.html">
+            
+                
+                    <a href="../react/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        React
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="react/jsx.html">
+            
+                
+                    <a href="../react/jsx.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        JSX
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="react/virtual-dom.html">
+            
+                
+                    <a href="../react/virtual-dom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Virtual DOM
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="react/components.html">
+            
+                
+                    <a href="../react/components.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Components
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="redux/index.html">
+            
+                
+                    <a href="../redux/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Redux
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="redux/history.html">
+            
+                
+                    <a href="../redux/history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        History
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="redux/principles.html">
+            
+                
+                    <a href="../redux/principles.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Principles
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="redux/actions.html">
+            
+                
+                    <a href="../redux/actions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Actions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="redux/state.html">
+            
+                
+                    <a href="../redux/state.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        State
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="redux/reducer.html">
+            
+                
+                    <a href="../redux/reducer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Reducers
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="redux/presentational.html">
+            
+                
+                    <a href="../redux/presentational.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Presentational Components
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="redux/containers.html">
+            
+                
+                    <a href="../redux/containers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Containers
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="styles/index.html">
+            
+                
+                    <a href="../styles/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Styles
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="resources/index.html">
+            
+                
+                    <a href="../resources/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        More Resources
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Modern Javascript 2016 </a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="promises">Promises</h1>
+<p>Promises are all about &quot;promising&quot; to return a future value. </p>
+<h2 id="making-a-promise">Making a Promise</h2>
+<p>To make a promise, you instantiate the <code>Promise</code> class.  Inside the <code>Promise</code> constructor, you pass a function.  We&apos;ll call this function the executor.</p>
+<p>The executor function has two parameters: <code>resolve</code> and <code>reject</code>.  Both <code>resolve</code> and <code>reject</code> are functions that can take in one parameter.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> askedForBurger = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; { <span class="hljs-comment">// the Executor function</span>
+  setTimeout(() =&gt; {
+    <span class="hljs-keyword">if</span> (kitchenOnFire) {
+      reject(<span class="hljs-string">&apos;Kitchen is on Fire&apos;</span>)
+      <span class="hljs-keyword">return</span>
+    }
+    <span class="hljs-keyword">let</span> looksCouldKaleBurger = <span class="hljs-keyword">new</span> Burger()
+    resolve(looksCouldKaleBurger)
+  }, <span class="hljs-number">1000</span>) <span class="hljs-comment">//Takes one second to make your burger</span>
+})
+</code></pre>
+<h2 id="the-promise-object">The <code>Promise</code> Object</h2>
+<p>From the code example above, now you have a Promise called <code>askedForBurger</code>.  You can now describe what you want to do with the burger after the Burger is done.</p>
+<p>All promise objects have two methods: <code>then</code> and <code>catch</code>.</p>
+<blockquote>
+<p><strong>Note:</strong> Any object with a method named <code>then</code> is called a Thenable object.  </p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> eatBurger = (burger) =&gt; {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      resolve(<span class="hljs-string">&apos;mmm so good!&apos;</span>)
+    }, <span class="hljs-number">2000</span>) <span class="hljs-comment">// Takes two seconds to eat your burger</span>
+  } 
+}
+
+<span class="hljs-keyword">let</span> ateBurger = askedForBurger.then(eatBurger)
+</code></pre>
+<h2 id="resolve-and-then"><code>resolve</code> and <code>then</code></h2>
+<p>Whatever parameter passed into the <code>resolve</code> function, that value will get passed into the function parameter of the <code>then</code> function callback.</p>
+<p>So from the example above:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> askedForBurger = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; { <span class="hljs-comment">// the Executor function</span>
+  setTimeout(() =&gt; {
+    <span class="hljs-keyword">if</span> (kitchenOnFire) {
+      reject(<span class="hljs-string">&apos;Kitchen is on Fire&apos;</span>)
+      <span class="hljs-keyword">return</span>
+    }
+    <span class="hljs-keyword">let</span> looksCouldKaleBurger = <span class="hljs-keyword">new</span> Burger()
+    resolve(looksCouldKaleBurger) <span class="hljs-comment">//  &gt;&gt;&gt;------ takes this value -----              </span>
+  }, <span class="hljs-number">1000</span>)                        <span class="hljs-comment">//                                 |</span>
+})                                <span class="hljs-comment">//                                 |</span>
+                                  <span class="hljs-comment">//                                 |</span>
+<span class="hljs-keyword">const</span> eatBurger = (burger) =&gt; {   <span class="hljs-comment">// &lt;&lt;&lt;----- to this burger param ---</span>
+  <span class="hljs-comment">// burger&apos;s value is looksCouldKaleBurger                          |</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {   <span class="hljs-comment">//                     |    </span>
+    setTimeout(() =&gt; {                        <span class="hljs-comment">//                     | </span>
+      resolve(<span class="hljs-string">&apos;mmm so good!&apos;</span>)                 <span class="hljs-comment">//                     | </span>
+    }, <span class="hljs-number">2000</span>)                                  <span class="hljs-comment">//                     | </span>
+  }                                           <span class="hljs-comment">//                     | </span>
+}                                             <span class="hljs-comment">//                     | </span>
+                                              <span class="hljs-comment">//                     | </span>
+<span class="hljs-keyword">let</span> ateBurger = askedForBurger.then(eatBurger)<span class="hljs-comment">// &lt;- because of this --</span>
+</code></pre>
+<h2 id="reject-and-catch"><code>reject</code> and <code>catch</code></h2>
+<p>Just like whatever is passed into <code>resolve</code> is available in the function passed into <code>then</code>, whatever is passed into <code>reject</code> is available in the function passed into <code>catch</code>.</p>
+<h2 id="chaining-promises">Chaining Promises</h2>
+<p>More often than not, Your async function need to call other async functions.  In order to chain your async function one after another, you need to return a new Promise object inside of the <code>then</code> callback.</p>
+<p>From the previous code block, the <code>ateBurger</code> object has a <code>then</code> method on it, because the <code>eatBurger</code> returned a Promise.  You can do something like <code>ateBurger.then(complimentChef)</code></p>
+<blockquote>
+<p><strong>Tip:</strong> What I find useful is usually naming the Promise object in past tense.  And name the function you pass into the <code>then</code> method in present tense, signifying that it&apos;s an action ready to do something.</p>
+</blockquote>
+<h2 id="full-example">Full Example</h2>
+<p>Scenario: You went to Bob&apos;s Burger restaurant.  You first <strong>tell the waiter your food order</strong>.  You wait for the food to come.  If it arrives, then you <strong>eat the food</strong>.  If the food is good, then you <strong>finish eating the food</strong>. Then you <strong>go home happy</strong>. If at any point, something goes wrong, you try to solve the problem or <strong>go home sad</strong>.</p>
+<p>This is what the application code looks like:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> toldWaiter = tellWaiterFoodOrder(<span class="hljs-string">&apos;Looks Could Kale Burger&apos;</span>, <span class="hljs-string">&apos;Bob&apos;</span>).catch(cannotOrderFood)
+<span class="hljs-keyword">let</span> foodArrived = toldWaiter.then(waitForFoodToCome).catch(cannotGetFood)
+<span class="hljs-keyword">let</span> finishedFood = foodArrived.then(eatFood).catch(cannotFinishFood)
+finishedFood.then(goHomeHappy, goHomeSad)
+</code></pre>
+<p>Notices that without caring too much about the implementation details, the code almost becomes as readable as the english language.</p>
+<p>For the full working example see <a href="https://jsfiddle.net/howlowck/Lwhx9Lz8/" target="_blank">this jsFiddle</a> (Refresh to see different outcomes.)</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../es6/class.html" class="navigation navigation-prev " aria-label="Previous page: The `class` Keyword"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../es6/generator.html" class="navigation navigation-next " aria-label="Next page: Generator"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"youtube":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

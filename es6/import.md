@@ -50,7 +50,7 @@ Despite those shortcomings, much of the JS community applauded the fact that Com
 ![cheer](../assets/cheer.gif)
 
 ### ES6 and the import/export syntax
-In 2014, ES5 (was still called ES5, not ES2015) finalized its module loading syntax.  The goal of the import/export syntax was to again unify the Javascript community with one syntax that would rule them all.
+In 2014, ES6 (was still called ES6, not ES2015) finalized its module loading syntax.  The goal of the import/export syntax was to again unify the Javascript community with one syntax that would rule them all.
 
 The goal of import/export functionality is to be as concise and readable as CommonJS, and allow asynchronous module loading that's more suited for the browser.
 

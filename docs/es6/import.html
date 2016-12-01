@@ -1,0 +1,721 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>import/export | Modern Javascript 2016 </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../tools/babel.html" />
+    
+    
+    <link rel="prev" href="../es6/generator.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.9"
+        data-chapter-title="import/export"
+        data-filepath="es6/import.md"
+        data-basepath=".."
+        data-revision="Thu Dec 01 2016 13:03:31 GMT-0600 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="basics/index.html">
+            
+                
+                    <a href="../basics/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Basics
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="basics/governing-bodies.html">
+            
+                
+                    <a href="../basics/governing-bodies.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Governing Bodies
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="basics/es5.html">
+            
+                
+                    <a href="../basics/es5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        ES5
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="es6/index.html">
+            
+                
+                    <a href="../es6/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        ES6
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="es6/variables.html">
+            
+                
+                    <a href="../es6/variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Variables
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="es6/destructuring.html">
+            
+                
+                    <a href="../es6/destructuring.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        De-structuring
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="es6/object.html">
+            
+                
+                    <a href="../es6/object.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Object Shorthand
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="es6/spread.html">
+            
+                
+                    <a href="../es6/spread.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Spread Operator
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="es6/arrow.html">
+            
+                
+                    <a href="../es6/arrow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Arrow Functions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="es6/class.html">
+            
+                
+                    <a href="../es6/class.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        The `class` Keyword
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="es6/promise.html">
+            
+                
+                    <a href="../es6/promise.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Promise
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="es6/generator.html">
+            
+                
+                    <a href="../es6/generator.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Generator
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.9" data-path="es6/import.html">
+            
+                
+                    <a href="../es6/import.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        import/export
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="tools/index.html">
+            
+            <span><b>3.</b> Tools</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="tools/babel.html">
+            
+                
+                    <a href="../tools/babel.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Babel
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="tools/webpack.html">
+            
+                
+                    <a href="../tools/webpack.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Webpack
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="react/index.html">
+            
+                
+                    <a href="../react/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        React
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="react/jsx.html">
+            
+                
+                    <a href="../react/jsx.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        JSX
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="react/virtual-dom.html">
+            
+                
+                    <a href="../react/virtual-dom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Virtual DOM
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="react/components.html">
+            
+                
+                    <a href="../react/components.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Components
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="redux/index.html">
+            
+                
+                    <a href="../redux/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Redux
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="redux/history.html">
+            
+                
+                    <a href="../redux/history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        History
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="redux/principles.html">
+            
+                
+                    <a href="../redux/principles.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Principles
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="redux/actions.html">
+            
+                
+                    <a href="../redux/actions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Actions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="redux/state.html">
+            
+                
+                    <a href="../redux/state.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        State
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="redux/reducer.html">
+            
+                
+                    <a href="../redux/reducer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Reducers
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="redux/presentational.html">
+            
+                
+                    <a href="../redux/presentational.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Presentational Components
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="redux/containers.html">
+            
+                
+                    <a href="../redux/containers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Containers
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="styles/index.html">
+            
+                
+                    <a href="../styles/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Styles
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="resources/index.html">
+            
+                
+                    <a href="../resources/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        More Resources
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Modern Javascript 2016 </a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="module-importing-and-exporting">Module Importing and Exporting</h1>
+<h2 id="brief-history">Brief History</h2>
+<h3 id="prenodejs">Pre-NodeJS</h3>
+<p>The idea of module loading and dependency management is not a new concept in programming.  For a long time in the javascript community, however, it seemed that developers weren&apos;t overly concerned with module loading.  </p>
+<p>This lack of attention to module loading is likely due to the fact that variables can easily be loaded, and made available in the global context, and libraries like jQuery and Prototype encouraged developers to monkey-patch and add methods to its prototype in ways of extending the library.  </p>
+<blockquote>
+<p><em><strong>Note:</strong></em> YUI (Yahoo UI) did have module loading but most developers were like  &#xAF;\_(&#x30C4;)_/&#xAF; ~meh~</p>
+</blockquote>
+<h3 id="nodejs-and-commonjs">NodeJS and CommonJS</h3>
+<p>NodeJS came out around 2009, and soon released with it Node Package Manager (<code>npm</code>), an command-line tool.  In NodeJS, it allowed a special function, <code>require()</code>, which looks up modules that are installed to the local project via <code>npm</code>.  </p>
+<p>Unfortunately, NodeJS and NPM was for the server, so front-end developers were left out in the cold.
+<img src="../assets/sad.gif" alt="sad"></p>
+<p>This is NodeJS&apos;s <strong>CommonJS</strong> syntax:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> $ = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;underscore&apos;</span>);
+<span class="hljs-keyword">var</span> react = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;react&apos;</span>);
+</code></pre>
+<h3 id="dawn-of-clientside-module-loading">Dawn of Client-side module loading</h3>
+<p>Soon after NodeJS, <a href="http://requirejs.org/" target="_blank">RequireJS</a> was released in early 2010, bringing the ability to load external and internal modules into your javascript project.</p>
+<p>The huge advantage of RequireJS was its ability to lazy load modules.  This means that until a piece of code was &quot;required&quot; by RequireJS, it won&apos;t be loaded in the browser.  When it <em>is</em> needed, RequireJS injects a <code>&lt;script&gt;</code> tag with the code to load it into the browser, then executes the code that requires the particular module (much like how JSONP works).</p>
+<p>This is what the RequireJS&apos;s <strong>Asynchronous Module Definition (AMD)</strong> syntax looked like</p>
+<pre><code class="lang-js">requirejs([<span class="hljs-string">&apos;jquery&apos;</span>, <span class="hljs-string">&apos;underscore&apos;</span>, <span class="hljs-string">&apos;app/modules/user&apos;</span>], <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$, _, user</span>) </span>{
+
+})
+</code></pre>
+<blockquote>
+<p><em><strong>Opinion:</strong></em> In my experience, AMD&apos;s way of script loading can quickly get out of hand with increasing number of dependencies; And to me, AMD is not as readable as CommonJS.  </p>
+</blockquote>
+<p>Lazy-loading and AMD was seen as the way to go on the browser because lazy-loading means faster initial load time.  Also developers can seamlessly develop their js app without any compile or render step.</p>
+<h3 id="browserify-and-isomorphicuniversal-javascript-apps">Browserify and Isomorphic/Universal Javascript Apps</h3>
+<p>More and more people in the JS community started to realize the advantages of running Javascript on both the server and client.  (Realtime App <em>and</em> Write validation rules only ONCE?!) The community needed a way to unify module loading between the server and the browser.</p>
+<p>Around 2011, <a href="http://browserify.org/" target="_blank">Browserify</a> was released which allows CommonJS way of loading modules in the browser.</p>
+<p>Browserify, unlike RequireJS, bundled all the dependencies into one <code>bundle.js</code> file, resulting in a larger initial page load, <em>and</em>, because of the bundling process, browserify requires the extra step in order to load in the browser.  </p>
+<p>Despite those shortcomings, much of the JS community applauded the fact that CommonJS can be used to write client-side javascript.<br><img src="../assets/cheer.gif" alt="cheer"></p>
+<h3 id="es6-and-the-importexport-syntax">ES6 and the import/export syntax</h3>
+<p>In 2014, ES6 (was still called ES6, not ES2015) finalized its module loading syntax.  The goal of the import/export syntax was to again unify the Javascript community with one syntax that would rule them all.</p>
+<p>The goal of import/export functionality is to be as concise and readable as CommonJS, and allow asynchronous module loading that&apos;s more suited for the browser.</p>
+<p>It&apos;s the best of both worlds!</p>
+<h2 id="export-and-import-syntax"><code>export</code> and <code>import</code> syntax</h2>
+<p>This is what the <strong><code>export</code></strong> syntax looks like:  </p>
+<pre><code class="lang-js"><span class="hljs-comment">// Coder module named Coder.js</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getRandomInt</span>(<span class="hljs-params">min, max</span>) </span>{
+  min = <span class="hljs-built_in">Math</span>.ceil(min);
+  max = <span class="hljs-built_in">Math</span>.floor(max);
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * (max - min)) + min;
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Coder</span> </span>{
+  constructor(name) {
+    <span class="hljs-keyword">this</span>.name = name
+    <span class="hljs-keyword">this</span>.energy = getRandomInt(<span class="hljs-number">3</span>, <span class="hljs-number">7</span>)
+  }
+  drinkCoffee() {
+    <span class="hljs-keyword">this</span>.energy += getRandomInt(<span class="hljs-number">2</span>,<span class="hljs-number">5</span>)
+  }
+  doWork() {
+    <span class="hljs-keyword">this</span>.energy -= <span class="hljs-number">1</span>
+  }
+  isTired() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.energy &lt;= <span class="hljs-number">0</span>
+  }
+  reportStatus() {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.isTired()) {
+      <span class="hljs-keyword">this</span>.drinkCoffee()
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name + <span class="hljs-string">&apos; is drinking coffee.&apos;</span>
+    }
+    <span class="hljs-keyword">this</span>.doWork()
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name + <span class="hljs-string">&apos; is coding.&apos;</span>
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Coder
+</code></pre>
+<p>This is what the <strong><code>import</code></strong> syntax looks like:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> Coder <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Coder&apos;</span> // the ./ looks for the file (with .js extension) in the current directory
+
+var vince = new Coder(<span class="hljs-string">&apos;Vince&apos;</span>)
+vince.reportStatus() // returns <span class="hljs-string">&apos;Vince is coding&apos;</span>
+vince.reportStatus() // returns <span class="hljs-string">&apos;Vince is coding&apos;</span>
+vince.reportStatus() // returns <span class="hljs-string">&apos;Vince is drinking coffee&apos;</span>
+</code></pre>
+<h2 id="resource">Resource</h2>
+<ul>
+<li><a href="http://www.2ality.com/2014/09/es6-modules-final.html" target="_blank">Overview of the topic</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../es6/generator.html" class="navigation navigation-prev " aria-label="Previous page: Generator"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../tools/babel.html" class="navigation navigation-next " aria-label="Next page: Babel"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"youtube":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

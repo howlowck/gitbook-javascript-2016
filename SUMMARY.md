@@ -10,6 +10,8 @@
   * [Spread Operator](es6/spread.md)
   * [Arrow Functions](es6/arrow.md)
   * [The `class` Keyword](es6/class.md)
+  * [Promise](es6/promise.md)
+  * [Generator](es6/generator.md)
   * [import/export](es6/import.md)
 * [Tools](tools/README.md)
   * [Babel](tools/babel.md)
